@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-mixer-edit (powerAddedEvent)="onSuperpowerAdded($event)"></app-mixer-edit>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item" style="cursor:pointer" *ngFor="let sp of superpowers; let i=index">
+        {{ i+1 }}. {{ sp.name }} ({{sp.level}})
+      </a>
+    </ul>
+  </div>
+</div>

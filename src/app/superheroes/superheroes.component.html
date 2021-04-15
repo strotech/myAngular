@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-superhero-list (superHeroSelectedInGrandchild)="selectedSh=$event"></app-superhero-list>
+  </div>
+  <div class="col-md-7">
+    <app-superhero-detail *ngIf="selectedSh; else infoText" [superChar]="selectedSh"></app-superhero-detail>
+    <ng-template #infoText>
+      <p>Please select a superhero!</p>
+    </ng-template>
+  </div>
+</div>

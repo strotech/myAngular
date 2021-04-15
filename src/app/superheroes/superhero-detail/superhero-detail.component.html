@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img [src]="superChar.imagePath" alt="{{superChar.name}}" class="img-responsive" style="max-height: 300px;">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{superChar.name}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <button type="button" class="btn btn-primary dropdown-toggle">Manage SH <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">To mixer</a></li>
+      <li><a href="#">Edit Superhero</a></li>
+      <li><a href="#">Delete Superhero</a></li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    {{superChar.description}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    Powers
+  </div>
+</div>
